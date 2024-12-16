@@ -1,0 +1,27 @@
+syntax = "proto3";
+package example_shm2;
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+import "common.proto";
+
+message msg_1 { string ex_str = 1; }
+message msg_2 { repeated string ex_str = 1; }
+message msg_3 { int32 ex_int = 1; }
+
+message ex_str {
+    string module = 1;
+    string issue = 2;
+    string value = 3;
+    string max = 4;
+}
+
+message msg_list_1 { repeated ex_str list = 1; }
+
+service new_srv {
+
+    rpc GetCurrentStatus(google.protobuf.Empty) returns (msg_1) {}
+    rpc GetLogFilesPath(msg_3) returns (msg_2) {}
+    rpc cfg_reload(google.protobuf.Empty) returns (common.rc_msg) {}
+    rpc SystemWarningStream(google.protobuf.Empty) returns (stream msg_list_1) {
+    }
+}

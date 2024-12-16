@@ -1,0 +1,9 @@
+syntax = "proto3";
+package example_shm1;
+import "common.proto";
+message new_msg { string ex_str = 1; }
+message new_cmd { uint32 id = 1; };
+service new_srv {
+    rpc new_serv_msg_1(new_msg) returns (common.rc_msg) {}
+    rpc new_serv_msg_2(new_cmd) returns (common.rc_msg) {}
+}

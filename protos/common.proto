@@ -1,0 +1,9 @@
+syntax = "proto3";
+package common;
+import "google/protobuf/empty.proto";
+enum rc_code {
+    SUCCESS = 0;
+    FAILED = 1;
+}
+
+message rc_msg { rc_code return_code = 1; }
