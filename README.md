@@ -45,7 +45,6 @@ if you want to add this as part of your main project follow these steps
     example:
 ```bash
     target_link_libraries(test gRPC::grpc++   example1_protobuf )
-
     add_dependencies(test example1_protobuf)
 ```
 by this, you make sure before your application is compiled, the Grpc interface it uses will be build and compiled
