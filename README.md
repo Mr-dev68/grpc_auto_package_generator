@@ -16,7 +16,7 @@ cmake 3.29
 protobuf 23.4
 gRPC 1.57
 
-ccommon.cmake file is taken from https://github.com/grpc/grpc/blob/master/examples/cpp/cmake/common.cmake and is from grpc project!
+common.cmake file is taken from https://github.com/grpc/grpc/blob/master/examples/cpp/cmake/common.cmake and is from grpc project!
 
 # How to use
 easy ! 
