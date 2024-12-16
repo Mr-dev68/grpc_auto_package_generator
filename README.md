@@ -24,13 +24,14 @@ easy !
 2. for each inteface(applciation interface(s)) that you have, create a folder(acts as library name) in protos folder and put your proto file(s) there
 3. 
 ```bash 
-mkdir build cd build
+mkdir build  && cd build
 ```
 4. 
 ```bash
 cmake .. ( or cmake -DCMAKE_INSTALL_PREFIX= /install/path)
 ```
-5. make ( or make install)
+5. make ( or make install) "\n"
+
 this repo already include an "ready to go" example, without touching anything and running install_packages(in a docker container, VN or directly on your system) you will get two sample ready to use grpc interfaces. it will get you the idea how to use it in your projects :D
 
 # using this utility as sub cmake project
