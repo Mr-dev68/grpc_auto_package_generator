@@ -42,7 +42,7 @@ if you want to add this as part of your main project follow these steps
     target_link_libraries("your project name indicated in your cmakelist.txt" gRPC::grpc++   (name of your protos folder)_protobuf )
     add_dependencies("your project name indicated in your cmakelist.txt" (name of your protos folder)_protobuf)
 ```
-**example:
+example:
 
 ```bash
     target_link_libraries(test gRPC::grpc++   example1_protobuf )
