@@ -22,8 +22,7 @@ ccommon.cmake file is taken from https://github.com/grpc/grpc/blob/master/exampl
 easy ! 
 1. make sure  all pre requirements are met
 2. for each inteface(applciation interface(s)) that you have, create a folder(acts as library name) in protos folder and put your proto file(s) there
-3. ```bash
-mkdir build cd build
+3. ```bash mkdir build cd build
 4. cmake .. ( or cmake -DCMAKE_INSTALL_PREFIX= /install/path)
 5. make ( or make install)
 this repo already include an "ready to go" example, without touching anything and running install_packages(in a docker container, VN or directly on your system) you will get two sample ready to use grpc interfaces. it will get you the idea how to use it in your projects :D
