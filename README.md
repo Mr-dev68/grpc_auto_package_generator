@@ -83,4 +83,5 @@ by this, you make sure before your application is compiled, the Grpc interface i
     -DOPENSSL_INCLUDE_DIR=/usr/include \
     -DOPENSSL_CRYPTO_LIBRARY=/usr/lib/x86_64-linux-gnu/libcrypto.so \
     -DOPENSSL_SSL_LIBRARY=/usr/lib/x86_64-linux-gnu/libssl.so
-   you might need to change x86_64-linux-gnu to thr architect of your system
+
+   you might need to change x86_64-linux-gnu to the architect of your system
