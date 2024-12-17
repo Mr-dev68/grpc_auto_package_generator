@@ -72,11 +72,13 @@ by this, you make sure before your application is compiled, the Grpc interface i
 # what if?
 
 1. when using install_packages.sh if you faced:
+
    -- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY)
    CMake Error at Utilities/cmcurl/CMakeLists.txt:644 (message):
    Could not find OpenSSL. Install an OpenSSL development package or
    configure CMake with -DCMAKE_USE_OPENSSL=OFF to build without OpenSSL.
-   replace ./bootstrap with
+
+   do replace ./bootstrap with
    ./bootstrap -- -DOPENSSL_ROOT_DIR=/usr \
     -DOPENSSL_INCLUDE_DIR=/usr/include \
     -DOPENSSL_CRYPTO_LIBRARY=/usr/lib/x86_64-linux-gnu/libcrypto.so \
