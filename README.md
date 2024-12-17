@@ -1,3 +1,7 @@
+# Idea
+
+the idea is to have a utility to edit, integrate and update the grpc interfaces used by a C++ project(s).
+
 # Introduction
 
 this is a utility project usefull for C++ devlopers working with grpc and want to automatically build their interfaces. this project can be added as a sub package to a Cmake project or used as standalone app. this cmake project will automatically generate the source and header files plus the static/dynamic libraries from Protocol Buffers proto files.
@@ -42,7 +46,7 @@ cmake .. (or cmake -DCMAKE_INSTALL_PREFIX= /install/path)
 
 5. make (or make install)
 
-this repo already include an "ready to go" example, without touching anything and running install_packages(in a docker container, VN or directly on your system) you will get two sample ready to use grpc interfaces. it will get you the idea how to use it in your projects :D
+this repo already include an "ready to go" example, without touching anything and running install_packages.sh (in a docker container, VN or directly on your system) you will get all pre-requirements, then by building the project two samples will be created. it will get you the idea how to use it in your projects :D
 
 # using this utility as sub cmake project
 
