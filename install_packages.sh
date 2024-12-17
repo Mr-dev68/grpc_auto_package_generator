@@ -9,7 +9,7 @@ export OPENSSL_ROOT_DIR=/usr/include/openssl
 wget https://cmake.org/files/v3.29/cmake-3.29.2.tar.gz
 tar -xzvf cmake-3.29.2.tar.gz
 cd cmake-3.29.2
-./bootstrap
+./bootstrap 
 make -j$(nproc)
 sudo make install
 which cmake
@@ -17,7 +17,7 @@ which cmake
 export PATH=/usr/local/bin/cmake:$PATH
 source ~/.bashrc
 cmake --version
-
+rm -rf cmake-3.29.2.tar.gz && rm -rf cmake-3.29.2
 echo "Installing Protocol Buffers..."
 mkdir packages && cd packages
 PROTOBUF_VERSION="23.4" # check with the protobuf git repo if newer version is available and you want to switch
